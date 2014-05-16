@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" href="ink.css"> <!-- For testing only -->
 
+<style type="text/css">
+
+  /* Ink styles go here in production */
+
+</style>
+
 <style>
 
     /* Body */
@@ -162,11 +168,13 @@
     <td class="wrapper last">
       <table class="twelve columns">
         <tr>
-          <td class="center text-pad">
+          <td class="center">
 
+      			<center>
             <a href="http://www.studentcarshare.ca/">
             <img class="center" src="http://gallery.mailchimp.com/aa7b6e77b8f3a03b5c76db117/images/3b7896ea-09e4-4acb-9da6-b4567c5f50a1.png">
             </a>
+            </center>
 
           </td>
           <td class="expander"></td>
@@ -384,7 +392,7 @@
             Going somewhere soon? You might want to book in advance.
           </p>
           <br>
-          <a class="button" href="#">Book Now</a>
+          <a class="button" href="http://www.studentcarshare.ca/">Book Now</a>
 
           </td>
           <td class="expander"></td>
@@ -468,22 +476,22 @@
     <td class="wrapper offset-by-one">
       <table class="ten columns">
         <tr>
-          <td class="text-pad center">
+          <td class="center">
 
           <p class="centerText smallText">
             Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
             *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
-
-            *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
-
-            *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
           </p>
           <p class="centerText smallText">
             *|HTML:LIST_ADDRESS_HTML|* *|END:IF|*
           </p>
-          <p class="centerText smallText">
+
+          <center>
+          <p class="centerText smallText invisText">
+            <!-- sorry -->
             *|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
           </p>
+          </center>
 
           </td>
           <td class="expander"></td>
