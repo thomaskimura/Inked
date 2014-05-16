@@ -17,7 +17,10 @@
 
     /* Body */
     body{
-			background:#f1f1f1;}
+			background:#eee;
+      color:#444;
+      font-size:15px;
+      line-height:1.6;}
 
     /* Headings */
 		h1,h2,h3{
@@ -25,89 +28,134 @@
 			font-weight:bold;
       color:#333;}
 
-		h1{font-size:24px;}
-		h2{font-size:20px;}
-		h3{font-size:18px;}
+		h1{font-size:24px; line-height:1.2;}
+		h2{font-size:20px; line-height:1.2;}
+		h3{font-size:18px; line-height:1.2;}
+    h4{font-size:15px; line-height:1.4;}
+    h5{font-size:12px; line-height:1.4;}
+    h6{font-size:10px; line-height:1.4;}
+
 
     /* Round top and bottom segments */
 		.top{
 			border-top-left-radius:5px;
 			border-top-right-radius:5px;}
 		.bottom{
-			background:#327ABD !important;
-			color:#fff !important;
 			border-bottom-left-radius:5px;
 			border-bottom-right-radius:5px;}
 
     /* Main content */
 		.content{
-			background:#ffffff;}
-		.content p{
-			font-size:16px;
-			line-height:1.6;
+			background:#fff;
       color:#444;}
-
-    /* Text color for bottom segment */
-		.bottom p{
-			color:#fff;}
+		.content p{
+			font-size:15px;
+			line-height:1.6;
+      color:#000;}
+    .content p a{
+      color:#327ABD;
+      text-decoration:underline;}
 
     /* Links below main element */
 		.bottomLink{
 			color:#444;
 			margin:5px;}
 
-    /* Header */
-		.header{
+    /* Highlight */
+    /* Use highlight colour to emphasis segment */
+		.highlight{
 			background:#327ABD;}
-		.header h1{
-			color:#fff;}
-		.header p{
-			color:#fff;}
-
-    /* Button elements */
-		.button{
-			background:#7FB859;
-			color:#ffffff;
-			padding:10px;
-			margin-top:10px;
-      margin-bottom:10px;
-			border-radius:5px;
-			font-size:18px;}
-		.button:hover{
-			color:#ffffff;
-			opacity:0.8;}
+		.highlight h1, .highlight p{color:#fff;}
 
     /* Custom classes */
 		.bigText{
 			font-size:18px !important;
 			line-height:1.4 !important;
-			opacity:0.7 !important;}
-
+			opacity:0.8 !important;}
 		.smallText{
 			font-size:10px !important;
 			line-height:1.2 !important;}
-
 		.centerText{
-			text-align:center;}
-
+			text-align:center !important;}
 		.invisText{
 			opacity:0;
 			display:hidden;}
-
 		.full{
-			width:100%;}
+			width:100% !important;}
 
 		.promo{
 			background:#7FB859;
 			color:#fff !important;
-			font-size:24px;
-			line-height:1.6;
+			font-size:18px;
+			line-height:1.4;
 			padding:10px;
 			text-align:center;
       border: 3px dashed #669347;}
 		.promo p{
 			color:#fff;
 			text-align:center;}
+
+    /* Button elements */
+		.button{
+			background:#7FB859;
+			color:#fff !important;
+			padding:10px;
+			margin-top:10px;
+      margin-bottom:10px;
+			border-radius:5px;
+			font-size:18px;
+      text-decoration:none !important;}
+		.button:hover{
+			color:#fff;
+			opacity:0.8;}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+
+  table[class="body"] .container {
+    width: 100% !important;
+  }
+
+  /* Add media queries */
+  .text-pad{
+    padding-left:20px !important;
+    padding-right:20px !important;}
+  .top, .bottom{border-radius:0px !important;}
+
+      /* Body */
+    body{
+      font-size:14px;
+      line-height:1.5;}
+
+		h1{font-size:20px;}
+		h2{font-size:18px;}
+		h3{font-size:15px;}
+    h4{font-size:12px;}
+    h5{font-size:10px;}
+    h6{font-size:8px;}
+
+		.content p{
+			font-size:14px !important;
+			line-height:1.5;}
+
+    /* Button elements */
+		.button{
+			font-size:15px;}
+
+    /* Custom classes */
+		.bigText{
+			font-size:15px !important;
+			line-height:1.2 !important;
+			opacity:0.8 !important;}
+		.smallText{
+			font-size:8px !important;
+			line-height:1.1 !important;}
+
+		.promo{
+			font-size:15px !important;
+			line-height:1.2 !important;}
+
+}
 
 </style>
 
@@ -131,9 +179,11 @@
 
 <!-- DESCRIPTION -->
 <!-- use this to show a preview to the email client before opening -->
+<!--
 <p class="invisText">
 	Enjoy your long weekend with free drive time & give the gift of a free membership
 </p>
+-->
 
 
 <!-- VIEW IN BROWSER -->
@@ -145,7 +195,7 @@
     <td class="wrapper last">
       <table class="twelve columns">
         <tr>
-          <td class="center text-pad">
+          <td class="center">
 
             <a href="*|ARCHIVE|*">View in browser</a>
 
@@ -188,7 +238,7 @@
 
 <!-- TILE AND SUBTITLE -->
 <!-- header, main section of email starts -->
-<table class="row header top">
+<table class="row highlight top">
   <tr>
 
     <!-- Ten Column -->
@@ -217,7 +267,7 @@
 
 
 <!-- CALL TO ACTION -->
-<table class="row header">
+<table class="row highlight">
   <tr>
 
     <!-- Ten Column -->
@@ -226,7 +276,6 @@
         <tr>
           <td class="center text-pad">
 
-            <br>
             <a class="button" href="http://www.studentcarshare.ca/">Drive Now</a>
 
           </td><td class="expander"></td>
@@ -254,7 +303,7 @@
         <tr>
           <td class="center text-pad">
 
-            <img class="center" src="http://gallery.mailchimp.com/aa7b6e77b8f3a03b5c76db117/images/14fa8b6c-0cf9-4b17-bb0b-56ec5fab3ca6.png">
+            <img class="center" src="http://placehold.it/400x200">
 
           </td><td class="expander"></td>
         </tr>
@@ -389,17 +438,17 @@ Book your car early to guarantee your favourite Student Car Share vehicle! Refer
 
 
 <!-- FOOTER SALE -->
-<table class="row content bottom">
+<table class="row bottom highlight">
   <tr>
 
     <!-- Ten Column -->
     <td class="wrapper offset-by-one">
       <table class="ten columns">
         <tr>
-          <td class="text-pad center">
+          <td class="text-pad">
 
   				<br>
-          <p class="bigText centerText">
+          <p class="bigText">
             Going somewhere soon? You might want to book in advance.
           </p>
           <br>
@@ -434,6 +483,7 @@ Book your car early to guarantee your favourite Student Car Share vehicle! Refer
         <tr>
           <td class="text-pad center">
 
+              <br>
 							<a class="bottomLink bigText" href="*|UNSUB|*">
 									Facebook
 							</a>

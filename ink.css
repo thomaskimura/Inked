@@ -584,7 +584,7 @@ body.outlook p {
   }
 
   table[class="body"] .container {
-    width: 95% !important;
+    width: 90% !important;
   }
 
   table[class="body"] .row {
@@ -679,4 +679,9 @@ body.outlook p {
   table[class="body"] .hide-for-desktop {
     display: inherit !important;
   }
+
+.text-pad{
+  padding-left:20px !important;
+  padding-right:20px !important;}
+
 }
