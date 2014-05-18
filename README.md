@@ -1,6 +1,6 @@
 Email-Templates
 ===============
 
-HTML email templates
+Here are some templates that have been built with [ink](http://zurb.com/ink/) for use with [mailchimp](http://mailchimp.com/).
 
-Some templates that can be used with mailchimp.com
+![My image](thomaskimura.github.com/Email-Templates/screenshots/letter.png)
