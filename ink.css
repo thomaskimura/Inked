@@ -67,7 +67,7 @@ table {
 }
 
 td {
-  word-break: break-word;
+  word-break: keep-all;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
@@ -323,7 +323,6 @@ body, table.body, h1, h2, h3, h4, h5, h6, p, td {
   padding:0;
   margin: 0;
   text-align: left;
-  line-height: 1.3;
 }
 
 h1, h2, h3, h4, h5, h6 {

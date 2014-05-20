@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="ink.css"> <!-- For testing only -->
 
 <style type="text/css">
-
-  /* Ink styles go here in production */
-
-</style>
-
-<style>
 	/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
 			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
@@ -29,25 +23,30 @@
 			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
 
 
+  /* Ink styles go here in production */
+</style>
+
+<style>
+
     /* Body */
     body{
-			background:#eee;
-      color:#444;
-      font-size:15px;
-      line-height:1.6;}
+			background:#eee !important;
+      color:#444 !important;
+      font-size:15px !important;
+      line-height:1.6 !important;}
 
     /* Headings */
 		h1,h2,h3{
-			letter-spacing:1px;
-			font-weight:bold;
-      color:#333;}
+			letter-spacing:1px !important;
+			font-weight:bold !important;
+      color:#333 !important;}
 
-		h1{font-size:24px; line-height:1.2;}
-		h2{font-size:20px; line-height:1.2;}
-		h3{font-size:18px; line-height:1.2;}
-    h4{font-size:15px; line-height:1.4;}
-    h5{font-size:12px; line-height:1.4;}
-    h6{font-size:10px; line-height:1.4;}
+		h1{font-size:24px !important; line-height:1.2 !important;}
+		h2{font-size:20px !important; line-height:1.2 !important;}
+		h3{font-size:18px !important; line-height:1.2 !important;}
+    h4{font-size:15px !important; line-height:1.4 !important;}
+    h5{font-size:12px !important; line-height:1.4 !important;}
+    h6{font-size:10px !important; line-height:1.4 !important;}
 
 
     /* Round top and bottom segments */
@@ -60,26 +59,31 @@
 
     /* Main content */
 		.content{
-			background:#fff;
-      color:#444;}
+			background:#fff !important;
+      color:#444 !important;}
 		.content p{
-			font-size:15px;
-			line-height:1.6;
-      color:#000;}
+			font-size:15px !important;
+			line-height:1.6 !important;
+      color:#000 !important;}
     .content p a{
-      color:#327ABD;
-      text-decoration:underline;}
+      color:#327ABD !important;
+      text-decoration:underline !important;}
 
     /* Links below main element */
 		.bottomLink{
-			color:#444 !important;;
+			color:#444 !important;
+			margin:5px !important;}
+
+    /* Links below main element */
+		.socialLink{
+			color:#fff !important;
 			margin:5px;}
 
     /* Highlight */
     /* Use highlight colour to emphasis segment */
 		.highlight{
-			background:#327ABD;}
-		.highlight h1, .highlight p{color:#fff;}
+			background:#327ABD !important;}
+		.highlight h1, .highlight p{color:#fff !important;}
 
     /* Custom classes */
 		.bigText{
@@ -92,36 +96,36 @@
 		.centerText{
 			text-align:center !important;}
 		.invisText{
-			opacity:0;
-			display:hidden;}
+			opacity:0 !important;
+			display:hidden !important;}
 		.full{
 			width:100% !important;}
 
 		.promo{
-			background:#7FB859;
+			background:#7FB859 !important;
 			color:#fff !important;
-			font-size:18px;
-			line-height:1.4;
-			padding:10px;
-			text-align:center;
-      border: 3px dashed #669347;}
+			font-size:18px !important;
+			line-height:1.4 !important;
+			padding:10px !important;
+			text-align:center !important;
+      border: 3px dashed #669347 !important;}
 		.promo p{
-			color:#fff;
-			text-align:center;}
+			color:#fff !important;
+			text-align:center !important;}
 
     /* Button elements */
 		.button{
 			background:#7FB859;
 			color:#fff !important;
-			padding:10px;
-			margin-top:10px;
-      margin-bottom:10px;
-			border-radius:5px;
-			font-size:18px;
+			padding:10px !important;
+			margin-top:10px !important;
+      margin-bottom:10px !important;
+			border-radius:5px !important;
+			font-size:18px !important;
       text-decoration:none !important;}
 		.button:hover{
-			color:#fff;
-			opacity:0.8;}
+			color:#fff !important;
+			opacity:0.8 !important;}
 
 /* Media queries */
 @media only screen and (max-width: 480px) {
@@ -138,15 +142,15 @@
 
       /* Body */
     body{
-      font-size:14px;
-      line-height:1.5;}
+      font-size:14px !important;
+      line-height:1.5 !important;}
 
-		h1{font-size:20px;}
-		h2{font-size:18px;}
-		h3{font-size:15px;}
-    h4{font-size:12px;}
-    h5{font-size:10px;}
-    h6{font-size:8px;}
+		h1{font-size:20px !important;}
+		h2{font-size:18px !important;}
+		h3{font-size:15px !important;}
+    h4{font-size:12px !important;}
+    h5{font-size:10px !important;}
+    h6{font-size:8px !important;}
 
 		.content p{
 			font-size:14px !important;
@@ -154,7 +158,7 @@
 
     /* Button elements */
 		.button{
-			font-size:15px;}
+			font-size:15px !important;}
 
     /* Custom classes */
 		.bigText{
@@ -313,7 +317,24 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td class="wrapper">
       <table class="one columns">
         <tr>
-          <td class="text-pad">
+          <td>
+          </td>
+          <td class="expander"></td>
+        </tr>
+      </table>
+    </td>
+
+		<!-- Five Column -->
+    <td class="wrapper">
+      <table class="five columns">
+        <tr>
+          <td class="center">
+
+            <center>
+              <!-- Centered image -->
+              <img class="center" src="http://placehold.it/200x200">
+            </center>
+
           </td>
           <td class="expander"></td>
         </tr>
@@ -326,24 +347,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <tr>
           <td class="text-pad">
 
-						<img SRC="http://placehold.it/200x200">
-            <p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-    </td>
-
-		<!-- Five Column -->
-    <td class="wrapper">
-      <table class="five columns">
-        <tr>
-          <td class="text-pad">
-
-						<img SRC="http://placehold.it/200x200">
             <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 						</p>
@@ -358,7 +361,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td class="wrapper last">
       <table class="one columns">
         <tr>
-          <td class="text-pad">
+          <td>
           </td>
           <td class="expander"></td>
         </tr>
@@ -377,7 +380,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td class="wrapper">
       <table class="one columns">
         <tr>
-          <td class="text-pad">
+          <td>
           </td>
           <td class="expander"></td>
         </tr>
@@ -388,76 +391,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td class="wrapper">
       <table class="five columns">
         <tr>
-          <td class="text-pad">
+          <td class="center">
 
-						<img SRC="http://placehold.it/200x200">
-            <p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-    </td>
-
-		<!-- Five Column -->
-    <td class="wrapper">
-      <table class="five columns">
-        <tr>
-          <td class="text-pad">
-
-						<img SRC="http://placehold.it/200x200">
-            <p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
-
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-    </td>
-
-		<!-- Empty Column -->
-    <td class="wrapper last">
-      <table class="one columns">
-        <tr>
-          <td class="text-pad">
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-    </td>
-
-  </tr>
-</table>
-
-
-<!-- COLUMN TEMPLATE -->
-<table class="row content">
-  <tr>
-
-		<!-- Empty Column -->
-    <td class="wrapper">
-      <table class="one columns">
-        <tr>
-          <td class="text-pad">
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-    </td>
-
-		<!-- Five Column -->
-    <td class="wrapper">
-      <table class="five columns">
-        <tr>
-          <td class="text-pad">
-
-						<img SRC="http://placehold.it/200x200">
-            <p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-						</p>
+            <center>
+              <!-- Centered image -->
+              <img class="center" src="http://placehold.it/200x200">
+            </center>
 
           </td>
           <td class="expander"></td>
@@ -471,7 +410,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <tr>
           <td class="text-pad">
 
-						<img SRC="http://placehold.it/200x200">
             <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 						</p>
@@ -486,7 +424,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td class="wrapper last">
       <table class="one columns">
         <tr>
-          <td class="text-pad">
+          <td>
           </td>
           <td class="expander"></td>
         </tr>
@@ -497,35 +435,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </table>
 
 
-<!-- FOOTER SALE -->
-<table class="row highlight bottom">
-  <tr>
-
-    <!-- Ten Column -->
-    <td class="wrapper offset-by-one">
-      <table class="ten columns">
-        <tr>
-          <td class="text-pad">
-
-  				<br>
-          <p class="bigText">
-            The last message will be displayed at the bottom of your email in a footer.
-          </p>
-          <br>
-          <a class="button" href="http://www.google.com/">Button</a>
-
-          </td>
-          <td class="expander"></td>
-        </tr>
-      </table>
-
-      <br>
-      <br>
-
-    </td>
-
-  </tr>
-</table>
 
 
 <!--END TEMPLATE-->
@@ -533,7 +442,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 
 <!-- BOTTOM LINKS -->
-<table class="row">
+<table class="row bottom highlight">
   <tr>
 
     <!-- Twelve Column -->
@@ -543,20 +452,28 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
           <td class="text-pad center">
 
               <br>
-							<a class="bottomLink bigText" href="*|UNSUB|*">
+							<a class="socialLink bigText" href="https://www.facebook.com">
 									Facebook
 							</a>
-							<a class="bottomLink bigText" href="*|UNSUB|*">
+							<a class="socialLink bigText" href="https://www.twitter.com">
 									Twitter
 							</a>
-							<a class="bottomLink bigText" href="*|UNSUB|*">
+							<a class="socialLink bigText" href="https://www.instagram.com">
 									Instagram
 							</a>
+          <br>
+          <br>
+          <br>
+          <a class="button" href="">Button</a>
 
           </td>
           <td class="expander"></td>
         </tr>
       </table>
+
+      <br>
+      <br>
+
     </td>
 
   </tr>
