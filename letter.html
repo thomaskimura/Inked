@@ -213,16 +213,7 @@
     <!-- content of email goes inside here -->
 
 
-<!-- DESCRIPTION -->
-<!-- use this to show a preview to the email client before opening -->
-<!--
-  <p class="invisText">
-
-  </p>
--->
-
-
-<!-- VIEW IN BROWSER -->
+<!-- VIEW IN BROWSER SEGMENT -->
 <!-- button to view email in browser -->
 <table class="row">
   <tr>
@@ -243,9 +234,10 @@
 
   </tr>
 </table>
+<!--End segment-->
 
 
-<!-- TOP LOGO -->
+<!-- TOP LOGO SEGMENT -->
 <!-- top logo for the email -->
 <table class="row">
   <tr>
@@ -272,7 +264,10 @@
 </table>
 
 
-<!-- TEXT TEMPLATE -->
+<!-- START LETTER TEMPLATE -->
+
+
+<!-- TEXT SEGMENT -->
 <table class="row content top">
   <tr>
 
@@ -313,9 +308,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
   </tr>
 </table>
+<!--End segment-->
 
 
-<!-- CALL TO ACTION -->
+<!-- CALL TO ACTION SEGMENT -->
 <table class="row content bottom">
   <tr>
 
@@ -338,13 +334,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
   </tr>
 </table>
+<!--End segment-->
 
 
 <!--END TEMPLATE-->
 <!-- do not edit below, this should be the same on every email -->
 
 
-<!-- SOCIAL LINKS -->
+<!-- SOCIAL LINKS SEGMENT -->
 <table class="row">
   <tr>
 
@@ -373,8 +370,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
   </tr>
 </table>
+<!--End segment-->
 
-<!-- BOTTOM LINKS -->
+
+<!-- BOTTOM LINKS SEGMENT -->
 <table class="row">
   <tr>
 
@@ -399,9 +398,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
   </tr>
 </table>
+<!--End segment-->
 
 
-<!-- COPYRIGHT & ADDRESS -->
+<!-- COPYRIGHT & ADDRESS SEGMENT -->
 <table class="row">
   <tr>
 
@@ -414,7 +414,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
           <center>
           <p class="centerText smallText">
             Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
-            *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+            *|IFNOT:ARCHIVE_PAGE|*
           </p>
           </center>
 
@@ -445,6 +445,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
   </tr>
 </table>
+<!--End segment-->
 
 
 		<!-- Shell -->
