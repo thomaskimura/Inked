@@ -69,6 +69,10 @@
       color:#327ABD !important;
       text-decoration:underline !important;}
 
+    p, h1, h2, h3, h4, h5, h6, span, ul, ol, a{
+      word-wrap: normal; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;
+    }
+
     /* Links below main element */
 		.bottomLink{
 			color:#444 !important;
@@ -405,12 +409,18 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <td class="wrapper offset-by-one">
       <table class="ten columns">
         <tr>
-          <td class="center">
+          <td class="center text-pad">
 
           <center>
           <p class="centerText smallText">
             Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.
             *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+          </p>
+          </center>
+
+          <center>
+          <p class="centerText smallText">
+            *|LIST:DESCRIPTION|*
           </p>
           </center>
 
