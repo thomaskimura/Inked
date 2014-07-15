@@ -1,3 +1,5 @@
+<!--Include bgcolor="" & <font> for outlook-->
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
@@ -8,30 +10,42 @@
     <link rel="stylesheet" href="ink.css"> <!-- For testing only -->
 
 <style type="text/css">
-	/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
-			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
-			.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
-			.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
-			body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-			table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
-			img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 
-			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
-			body{margin:0; padding:0;}
-			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-			table{border-collapse:collapse !important;}
-			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table{border-collapse:collapse !important;}
+body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
 
 
-  /* Ink styles go here in production */
+/**This is to overwrite Outlook.com’s Embedded CSS************/
+table {border-collapse:separate;}
+a, a:link, a:visited {text-decoration: none; color: #00788a}
+a:hover {text-decoration: underline;}
+h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {color:#000 !important}
+p {margin-bottom: 0}
+.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%}
+/**This is to center your email in Outlook.com************/
+.ExternalClass {width: 100%;}
+
+
+/* Ink styles go here in production */
+/************************************/
 </style>
 
 <style>
 
     /* Body */
     body{
-			background:#eee !important;
-      color:#444 !important;
+			background:#E1E7EA !important;
+      color:#444444 !important;
       font-size:15px !important;
       line-height:1.6 !important;}
 
@@ -39,7 +53,7 @@
 		h1,h2,h3{
 			letter-spacing:1px !important;
 			font-weight:bold !important;
-      color:#333 !important;}
+      color:#333333 !important;}
 
 		h1{font-size:24px !important; line-height:1.2 !important;}
 		h2{font-size:20px !important; line-height:1.2 !important;}
@@ -59,13 +73,14 @@
 
     /* Main content */
 		.content{
-			background:#fff !important;
-      color:#444 !important;}
+			background:#ffffff !important;
+      color:#444444 !important;}
 		.content p{
 			font-size:15px;
-			line-height:1.6;}
+			line-height:1.6;
+      color:#000000 !important;}
     .content p a{
-      color:#327ABD !important;
+      color:#1f88db !important;
       text-decoration:underline !important;}
 
     p, h1, h2, h3, h4, h5, h6, span, ul, ol, a{
@@ -74,7 +89,7 @@
 
     /* Links below main element */
 		.bottomLink{
-			color:#444 !important;
+			color:#444444 !important;
 			margin:5px !important;}
 
     /* Links below main element */
@@ -84,8 +99,8 @@
     /* Highlight */
     /* Use highlight colour to emphasis segment */
 		.highlight{
-			background:#327ABD !important;}
-		.highlight h1, .highlight p, .highlight a{color:#fff !important;}
+			background:#1f88db !important;}
+		.highlight h1, .highlight p, .highlight a{color:#ffffff !important;}
     .highlight a{text-decoration:underline;}
 
     /* Custom classes */
@@ -97,7 +112,7 @@
 			font-size:42px !important;
 			line-height:1.4 !important;}
 		.smallText{
-			font-size:12px !important;
+			font-size:10px !important;
 			line-height:1.2 !important;}
 		.centerText{
 			text-align:center !important;}
@@ -108,37 +123,37 @@
 			width:100% !important;}
 
 		.promo{
-			background:#7FB859 !important;
-			color:#fff !important;
+			background:#69cf89 !important;
+			color:#ffffff !important;
 			font-size:18px !important;
 			line-height:1.4 !important;
 			padding:10px !important;
 			text-align:center !important;}
 		.promo p{
-			color:#fff !important;
+			color:#ffffff !important;
 			text-align:center !important;}
 
     /* Button elements */
 		.button{
-			background:#7FB859;
-			color:#fff !important;
+			background:#69cf89;
+			color:#ffffff !important;
 			padding:10px !important;
 			margin-top:10px !important;
       margin-bottom:10px !important;
-			border-radius:5px !important;
+			border-radius:3px !important;
 			font-size:18px !important;
       text-decoration:none !important;}
 		.button:hover{
-			color:#fff !important;
-			opacity:0.6 !important;}
+			color:#ffffff !important;
+			opacity:0.9 !important;}
 		.twitterButton{
 			background:#55acee !important;
-			color:#fff !important;
+			color:#ffffff !important;
 			border:none !important;
 			border-radius:5px !important;}
 		.facebookButton{
 			background:#3b5998 !important;
-			color:#fff !important;
+			color:#ffffff !important;
 			border:none !important;
 			border-radius:5px !important;}
 
@@ -168,7 +183,7 @@
     h6{font-size:8px !important;}
 
 		.content p{
-			font-size:14px;
+			font-size:14px !important;
 			line-height:1.5;}
 
     /* Button elements */
@@ -181,7 +196,7 @@
 			line-height:1.2 !important;
 			opacity:0.9 !important;}
 		.smallText{
-			font-size:10px !important;
+			font-size:8px !important;
 			line-height:1.1 !important;}
 		.promo{
 			font-size:15px !important;
@@ -199,16 +214,23 @@ td h4{line-height:1.4;}
 td h5{line-height:1.4;}
 td h6{line-height:1.4;}
 
+table .content{
+	background:#ffffff !important;}
 table .highlight{
-	background:#327ABD !important;}
-table .highlight h1, .highlight p, .highlight a{color:#fff !important;}
+	background:#1f88db !important;}
+table .highlight h1, .highlight p, .highlight a{color:#ffffff !important;}
 table .highlight a{text-decoration:underline;}
 table .top{
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;}
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;}
 table .bottom{
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;}
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;}
+
+.body{
+  background-color:#E1E7EA;}
+body{
+  background-color:#E1E7EA;}
 
 </style>
 
