@@ -1,0 +1,180 @@
+// cd git/inked
+// sass --watch sass/style.scss:css/style.min.css --style compressed
+// sass --watch sass/style.scss:css/style.css
+
+@import "variables.scss";
+@import "reset.scss";
+
+
+// Body
+body {
+  margin: 0;
+  font-family:  Helvetica, Arial, sans-serif;
+  line-height:1.618;
+  word-break: break-word;
+  color: $color-text;
+  background: $color-background;
+}
+table.body {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+table.row, table.columns {
+  width:100%;
+}
+.container {
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 95%;
+  max-width: 580px;
+}
+.column {
+  padding: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.top-corner {
+  border-top-right-radius: $size-radius;
+  border-top-left-radius: $size-radius;
+}
+.bottom-corner {
+  border-bottom-right-radius: $size-radius;
+  border-bottom-left-radius: $size-radius;
+}
+.background {
+  background: $color-background;
+}
+.content {
+  background: $color-content;
+}
+.highlight {
+  background: $color-primary;
+  color: $color-contrast !important;
+}
+.highlight a {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+}
+
+
+// Headings
+h1,h2,h3, h4, h5, h6 {
+  letter-spacing:1px !important;
+  font-weight:bold !important;
+  font-family:  $font-default;
+}
+.content h1,.content h2,.content h3,.content h4,.content h5,.content h6 {
+  color:$color-header;
+}
+.highlight h1,.highlight h2,.highlight h3,.highlight h4,.highlight h5,.highlight h6,.highlight a,.highlight p {
+  color: $color-contrast !important;
+  margin: 0
+}
+
+// Basic typography
+p, .container, .container p {
+  line-height: 1.6;
+}
+hr {
+  height: 3px;
+  border: none;
+  background: $color-light;
+}
+h1 {font-size:24px !important; line-height:1.2 !important;}
+h2 {font-size:20px !important; line-height:1.2 !important;}
+h3 {font-size:18px !important; line-height:1.2 !important;}
+h4 {font-size:15px !important; line-height:1.4 !important;}
+h5 {font-size:12px !important; line-height:1.4 !important;}
+h6 {font-size:10px !important; line-height:1.4 !important;}
+
+
+// Buttons
+.button{
+  background: $color-cta;
+  color: $color-contrast !important;
+  padding: 10px !important;
+  border-radius: 3px !important;
+  font-size: 18px !important;
+  line-height: 45px;
+  white-space: nowrap;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button, .highlight .button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.button a {
+  color: $color-contrast;
+}
+.button-light     {background: $color-background;}
+.button-facebook  {background:#3b5998;}
+.button-twitter   {background:#55acee;}
+.button-instagram {background:#3f729b;}
+
+
+// Helper classes
+.box {
+  padding: 10px;
+  border: 3px solid $color-border;
+  border-radius: 3px;
+  background: $color-light;
+}
+.light-text {
+  opacity: 0.8;
+}
+.lighter-text {
+  opacity: 0.5;
+}
+.center-text {
+  text-align: center;
+}
+.big-text {
+  font-size:18px !important;
+  line-height:1.4 !important;
+  opacity:0.9 !important;
+}
+.bigger-text {
+  font-size:42px !important;
+  line-height:1.4 !important;
+}
+.small-text {
+  font-size:12px !important;
+  line-height:1.4 !important;
+  opacity:0.7;
+}
+.no-margin {
+  margin:0px;
+}
+.full {
+  width: 100%;
+}
+
+
+// Columnized table
+.split-table{
+    width:100% !important;
+    border-radius:3px;
+}
+.split-table td {
+    width: 50% !important;
+    padding: 10px !important;
+    vertical-align: top;
+}
+.vertical-border td {
+    border:3px solid $color-border;
+}
+.table-hover:hover {
+  background: $color-content;
+}
+.table-color {
+  border:3px solid $color-border;
+  border-radius:3px;
+  background:$color-light;
+}

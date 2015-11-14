@@ -1,0 +1,23 @@
+/*CLIENT SPECIFIC STYLES*/
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+/*RESET STYLES*/
+body{margin:0; padding:0;}
+img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table{border-collapse:collapse !important;}
+body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+/*OVERWRITE OUTLOOK SHIT*/
+table {border-collapse:separate;}
+a, a:link, a:visited {text-decoration: none; color: #00788a}
+a:hover {text-decoration: underline;}
+h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {color:#000 !important}
+p {margin-bottom: 0}
+.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%}
+/**This is to center your email in Outlook.com************/
+.ExternalClass {width: 100%;}
