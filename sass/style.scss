@@ -6,62 +6,6 @@
 @import "reset.scss";
 
 
-// Body
-body {
-  margin: 0;
-  font-family:  Helvetica, Arial, sans-serif;
-  line-height:1.618;
-  word-break: break-word;
-  color: $color-text;
-  background: $color-background;
-}
-table.body {
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
-}
-table.row, table.columns {
-  width:100%;
-}
-.container {
-  padding: 10px;
-  margin: 10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  width: 95%;
-  max-width: 580px;
-}
-.column {
-  padding: 25px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.top-corner {
-  border-top-right-radius: $size-radius;
-  border-top-left-radius: $size-radius;
-}
-.bottom-corner {
-  border-bottom-right-radius: $size-radius;
-  border-bottom-left-radius: $size-radius;
-}
-.background {
-  background: $color-background;
-}
-.content {
-  background: $color-content;
-}
-.highlight {
-  background: $color-primary;
-  color: $color-contrast !important;
-}
-.highlight a {
-  text-decoration: underline;
-}
-img {
-  max-width: 100%;
-}
-
-
 // Headings
 h1,h2,h3, h4, h5, h6 {
   letter-spacing:1px !important;
@@ -76,9 +20,11 @@ h1,h2,h3, h4, h5, h6 {
   margin: 0
 }
 
+
 // Basic typography
 p, .container, .container p {
   line-height: 1.6;
+  font-family:  $font-default;
 }
 hr {
   height: 3px;
@@ -177,4 +123,61 @@ h6 {font-size:10px !important; line-height:1.4 !important;}
   border:3px solid $color-border;
   border-radius:3px;
   background:$color-light;
+}
+
+
+// Body
+body {
+  margin: 0;
+  font-family:  Helvetica, Arial, sans-serif;
+  line-height:1.618;
+  word-break: break-word;
+  color: $color-text;
+  background: $color-background;
+}
+table.body {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  background: $color-background;
+}
+table.row, table.columns {
+  width:100%;
+}
+.container {
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 95%;
+  max-width: 580px;
+}
+.column {
+  padding: 25px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.top-corner {
+  border-top-right-radius: $size-radius;
+  border-top-left-radius: $size-radius;
+}
+.bottom-corner {
+  border-bottom-right-radius: $size-radius;
+  border-bottom-left-radius: $size-radius;
+}
+.background {
+  background: $color-background;
+}
+.content {
+  background: $color-content;
+}
+.highlight {
+  background: $color-primary;
+  color: $color-contrast !important;
+}
+.highlight a {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
 }
