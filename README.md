@@ -1,4 +1,4 @@
-Here are some templates that have been built for use with [mailchimp](http://mailchimp.com/) and other email services.
+HTML email templates for anything.
 
 View a live version of this template [here](http://thomaskimura.github.io/Inked/).
 
